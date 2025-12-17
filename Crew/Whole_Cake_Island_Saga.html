@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <style>
+        .head {
+            background-image: url('https://img.mlbstatic.com/mlb-images/image/upload/t_4x1/t_w1024/mlb/urrkqp8gfqiey6eiovqt.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 220px;
+            width: 100%;
+            color: #000000;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: rgb(36, 210, 249);
+        }
+
+        .saga-section {
+            padding: 50px 25px;
+            background: #e1ecec;
+            margin-bottom: 40px;
+            border-radius: 15px;
+        }
+
+        .saga-section h2 {
+            font-size: 34px;
+            color: #1a1a1a;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .saga-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .saga-gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0);
+        }
+
+        .saga-gallery img:hover {
+            box-shadow: 0px 6px 18px rgba(107, 241, 235, 0.854);
+        }
+
+        .saga-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+            max-width: 900px;
+            margin: auto;
+            text-align: justify;
+            padding: 0 15px;
+        }
+
+        .ep-list {
+            max-width: 900px;
+            margin: 25px auto 0;
+            padding: 0 20px;
+            list-style-type: none;
+        }
+
+        .ep-list li {
+            background: #ffffff;
+            padding: 12px 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            color: #333;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .ep-list li:hover {
+            background: #06c9f4;
+
+        }
+
+        .readbtn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #0080ff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .readbtn:hover {
+            background: #005ec2;
+        }
+
+        @media (max-width: 480px) {
+            .saga-gallery img {
+                height: 150px;
+            }
+
+            .saga-section h2 {
+                font-size: 28px;
+            }
+
+            .saga-text {
+                font-size: 15px;
+            }
+        }
+
+        .footer {
+            background-image: linear-gradient(rgba(39, 245, 235, 0.5), rgba(10, 40, 100, 0.5));
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 350px;
+            display: flex;
+            align-items: flex-start;
+            padding-top: 30px;
+        }
+
+        dt {
+            font-size: 10px;
+            color: #000000;
+        }
+
+        .img-f {
+            height: 30px;
+            width: 30px;
+            border: 2px solid black;
+            border-radius: 5px;
+            gap: 15px;
+        }
+
+        .img-f:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 18px rgb(255, 0, 0);
+        }
+
+         .t{
+            text-align: center;
+            background-color: rgb(11, 228, 210);
+            font-size:50px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="head" id="Home">
+        <h1>One Piece</h1>
+
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#intro">Introduction</a>
+            <a href="#aboutauthor">About Author</a>
+            <a href="#Episodes">Episodes</a>
+            <a href="#crew">Crew</a>
+            <a href="#Gallery">Gallery</a>
+            <a href="#Saga">Saga</a>
+        </nav>
+    </section>
+
+        <section> 
+        <div class="t"><p><strong>Whole Cake Island</strong></p></div>
+    </section>
+
+    <section id="Whole_Cake_Island-Saga" class="saga-section">
+        <h2></h2>
+
+        <div class="saga-gallery">
+            <img src="https://i.redd.it/ki0w9cs1slga1.jpg"
+                alt="Sanji crying in the rain">
+            <img src="https://fictionhorizon.com/wp-content/uploads/2022/10/LuffyKatakuri.jpg"
+                alt="Luffy vs Katakuri in Mirror World">
+            <img src="https://comicvine.gamespot.com/a/uploads/original/11133/111335576/6700609-one_piece_873___big_mom_by_melonciutus-dbh9xh2.png"
+                alt="Big Mom in hunger rage">
+
+
+        </div>
+
+        <p class="saga-text">
+            The Whole Cake Island Saga begins immediately after the events of Zou, when the Straw Hats learn that Sanji
+            has been taken to Big Mom’s territory for a political marriage with Charlotte Pudding, one of Big Mom’s
+            daughters. Luffy, Nami, Chopper, Brook, and the newly allied Carrot set sail for Whole Cake Island,
+            determined to bring Sanji home at all costs. Upon entering Totto Land, they discover a world made of living
+            sweets, ruled by Big Mom’s terrifying power to manipulate souls using the Soru Soru no Mi. Sanji, meanwhile,
+            is forced into the marriage under threat of death to his mentor Zeff. His family, the Vinsmokes, are
+            revealed to be genetically engineered supersoldiers who despise him for being born “weak.” The emotional
+            gravity intensifies when Luffy refuses to fight back against Sanji during their reunion, symbolizing Luffy’s
+            unbreakable love for his crewmate.</p>
+        <p class="saga-text">While infiltrating Big Mom’s territory, the Straw Hats learn of Big Mom’s dream to create a
+            utopia where all races coexist—though built on fear and cruelty. Brook proves instrumental, sneaking into
+            Big Mom’s room and copying the Poneglyphs despite being nearly killed. Meanwhile, Pudding initially appears
+            kind but is revealed to be a sadistic manipulator with a third eye, intending to kill Sanji during the
+            wedding. Sanji’s kind words toward her transform her heart, making her a tragic figure torn between
+            expectations and genuine emotion.
+        </p>
+        <p class="saga-text">
+
+            The Straw Hats team up with Capone Bege, one of Big Mom’s own commanders, to execute a risky assassination
+            attempt during the wedding ceremony. But the plan collapses when Big Mom’s scream of grief—triggered by the
+            smashed portrait of Mother Carmel—unleashes unstoppable power. Amid the chaos, Luffy unleashes dozens of
+            clones to confuse the Big Mom Pirates, while Sanji saves his family from certain death. As Big Mom enters a
+            hunger-driven rage, the crew races to escape Whole Cake Island, facing relentless pursuit from Big Mom’s
+            fleet.
+        </p>
+        <p class="saga-text">
+            The emotional peak hits when Pedro sacrifices himself to ensure the crew’s escape, leaving Carrot devastated
+            but determined. In the final dramatic chase, Jinbe officially pledges allegiance to Luffy, and the Straw
+            Hats barely escape thanks to the Sunny’s strength and Nami’s tactical brilliance. Meanwhile, Sanji completes
+            his greatest act of kindness, baking a perfect wedding cake with Pudding—one that temporarily calms Big
+            Mom’s destructive hunger. The saga ends with the crew finally reuniting and sailing away, while Big Mom vows
+            revenge.
+        </p>
+        <p class="saga-text">
+            In total, the Whole Cake Island Saga delivers a powerful blend of emotion, action, betrayal, family
+            conflict, and crew loyalty, focusing deeply on Sanji while expanding the world’s political complexity and
+            the might of the Yonko.
+        </p>
+
+        <ul class="ep-list">
+            <li><strong>Silver Mine Arc (Filler):</strong> Episodes 747–750</li>
+            <li><strong>Zou Arc:</strong> Episodes 751–779</li>
+            <li><strong>Marine Rookie Arc (Filler):</strong> Episodes 780–782</li>
+            <li><strong>Whole Cake Island Arc:</strong> Episodes 783–877</li>
+            <li><strong>Levely (Reverie) Arc:</strong> Episodes 878–889</li>
+        </ul>
+    </section>
+
+     <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="Menu-characters">
+                        <dl>
+                            <h2 class="h2">Menu</h2>
+                            <a href="../index.html#home">
+                                <dt>Home</dt>
+                            </a>
+                            <a href="../index.html#intro">
+                                <dt>Introduction</dt>
+                            </a>
+                            <a href="../index.html#aboutauthor">
+                                <dt>About Author</dt>
+                            </a>
+                            <a href="../index.html#crew">
+                                <dt>Crew</dt>
+                            </a>
+                            <a href="../index.html#Gallery">
+                                <dt>Gallery</dt>
+                            </a>
+                            <a href="../index.html#Saga">
+                                <dt>Saga</dt>
+                            </a>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="text-characters">
+                        <dl>
+                            <h2 class="h2">Crew Members</h2>
+                            <a href="../index.html#Luffy">
+                                <dt>Monkey D. Luffy</dt>
+                            </a>
+                            <a href="../index.html#Zoro">
+                                <dt>Roronoa Zoro</dt>
+                            </a>
+                            <a href="../index.html#Sanji">
+                                <dt>Vinsmoke Sanji</dt>
+                            </a>
+                            <a href="../index.html#Nami">
+                                <dt>Nami</dt>
+                            </a>
+                            <a href="../index.html#Chopper">
+                                <dt>Tony Tony Chopper</dt>
+                            </a>
+                            <a href="../index.html#Usoop">
+                                <dt>Usoop</dt>
+                            </a>
+                            <a href="../index.html#Robin">
+                                <dt>Nico Robin</dt>
+                            </a>
+                            <a href="../index.html#Franky">
+                                <dt>Franky</dt>
+                            </a>
+                            <a href="../index.html#Brook">
+                                <dt>Brook</dt>
+                            </a>
+                            <a href="../index.html#Jinbe">
+                                <dt>Jinbe</dt>
+                            </a>
+                            <a href="../index.html#Going-Merry">
+                                <dt>Going Merry</dt>
+                            </a>
+                            <a href="../index.html#Sunny">
+                                <dt>Thousand Sunney</dt>
+                            </a>
+
+                        </dl>
+                    </div>
+
+                </div>
+                <div class="col-sm-3">
+                    <div class="arc-text">
+                        <h2>Saga</h2>
+                        <dl>
+                            <a href="East_Blue_Saga.html">
+                                <dt>East Blue Saga</dt>
+                            </a>
+                            <a href="Arabasta_Saga.html">
+                                <dt>Arabasta Saga</dt>
+                            </a>
+                            <a href="Skypiea_Saga.html">
+                                <dt>Skypiea Saga</dt>
+                            </a>
+                            <a href="Enies_Lobby_Saga.html">
+                                <dt>Water 7 & Enies Lobby Saga</dt>
+                            </a>
+                            <a href="Thriller_Bark_Saga.html">
+                                <dt>Thriller Bark Saga</dt>
+                            </a>
+                            <a href="Summit_War_Saga.html">
+                                <dt>Summit War Saga</dt>
+                            </a>
+                            <a href="Fish-Man_Island_Saga.html">
+                                <dt>Fish-Man Island Saga</dt>
+                            </a>
+                            <a href="Dressrosa_Saga.html">
+                                <dt>Dressrosa Saga</dt>
+                            </a>
+                            <a href="Whole_Cake_Island_Saga.html">
+                                <dt>Whole Cake Island Saga</dt>
+                            </a>
+                            <a href="Wano_Country_Saga.html">
+                                <dt>Wano Country Saga</dt>
+                            </a>
+                            <a href="Final_Saga.html">
+                                <dt>Egghead Saga</dt>
+                            </a>
+                        </dl>
+
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="Connect-text">
+                        <dl>
+                            <h2 class="h2">Connect</h2>
+                            <a href="https://www.instagram.com/ram_esh_7718/"><img
+                                    src="https://i.pinimg.com/736x/21/d6/7f/21d67f1d6b3be5bb2e39395311c77fc6.jpg"
+                                    class="img-f"></a>
+                            <a href="https://www.facebook.com/share/17YWsqFsqJ/"><img
+                                    src="https://thumbs.dreamstime.com/b/facebook-logo-vector-eps-file-squared-coloured-easily-editable-have-white-background-high-resolution-255557233.jpg"
+                                    class="img-f"></a>
+                            <a href="https://discord.gg/CKzJNsBU"><img
+                                    src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxsG72wAo9EWJR4yQWyJJaDaK1XdUso6cUMpI9hAdPUU_FNs11cY1X284vsHrnWtRw7oqRpN1m9YAg21d_aNKnIo-&format=sourceS"
+                                    class="img-f"></a>
+                            <a href="https://www.linkedin.com/in/ramesh-reddy-a583ba249/"><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0bGEl9v47XieEtHyj0TqTr1tOXJmib-KHtw&s"
+                                    class="img-f"></a>
+                        </dl>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="text">
+                <p style="text-align: bottom,center;">&copy; Made by Ramesh Reddy</p>
+            </div>
+    </section>
+
+</body>
+
+</html>
